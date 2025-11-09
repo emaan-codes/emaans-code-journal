@@ -1,3 +1,11 @@
+// Function to toggle secret section visibility
+function togglesecret() {
+  const secretContent = document.getElementById('secretcontent');
+  if (secretContent) {
+    secretContent.style.display = secretContent.style.display === 'none' ? 'block' : 'none';
+  }
+}
+
 // Safe DOM-ready wrapper + null-guards to avoid runtime errors when elements are missing
 document.addEventListener('DOMContentLoaded', () => {
   // Get modal elements
@@ -12,7 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (openModal) {
     openModal.addEventListener('click', (e) => {
       e.preventDefault(); // Prevent default link behavior
-      modal.style.display = 'block';
+      // use 'flex' so the CSS centering (display:flex; align-items/justify-content)
+      // takes effect and the modal content appears centered
+      modal.style.display = 'flex';
     });
   }
 
@@ -28,5 +38,5 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target === modal) {
       modal.style.display = 'none';
     }
-  });
+  });   
 });
