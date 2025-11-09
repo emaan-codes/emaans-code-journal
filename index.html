@@ -1,23 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Emaan's Coding Journal. documenting my journey in web development, experiments, and creative projects."
+    >
+    <link rel="stylesheet" href="style.css" >
     <title>Emaan's Coding Journal</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div id="preloader" aria-label="Loading" role="status">
+      <div class="spinner" aria-hidden="true"></div>
+    </div>
+    <header>
+      <div class="container">
+        <h1>Emaan's Coding Journal</h1>
+        <nav id="nav-links" aria-label="Main Navigation">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" id="openModal">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
-    <nav id="nav-links">
-    <h1>Emaan's coding journal</h1>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
-    <main>
-        <section class="about">About me</section>
-        <section class="projects">Projects</section>
-        <section class="contact">Contact</section>
-    </nav>
+      <section id="hero" class="section" aria-label="Introduction">
+        <div class="container">
+          <h2>Hello, I'm Emaan 👋</h2>
+          <p>A self-taught web developer in progress.</p>
+          <p>
+            Documenting my coding journey, experiments, and projects along the
+            way.
+          </p>
+           <p>Want to know me better? <a href="#" id="secretLink">Click here</a></p>
+        </div>
+      </section>
+      <section id="about" class="section" aria-label="About Me">
+        <div class="container">
+          <h3>Skills:</h3>
+          <ul class="tools-list">
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
+            <li>VS Code</li>
+            <li>Figma</li>
+            <li>UI/UX</li>
+          </ul>
+          <p>
+           Currently focusing on front-end best practices and
+            preparing to explore frameworks soon.
+          </p>
+        </div>
+      </section>
+      <section id="projects" class="section" aria-label="Projects">
+        <div class="container">
+          <h2>My Projects</h2>
+          <p>
+             Here you'll find things I've built, experimented with, or learned from., I'm actively working on more
+            projects, and this section will grow as I continue my coding journey.
+          </p>
+          <div class="projects-container">
+            <article class="project-card">
+              <h3>Latest Projects</h3>
+              <img
+                src="pizzaplacemockup-removebg-preview.png"
+                alt="Screenshot of Little Pizza Shop website"
+                width="200"
+              >
+              <p>
+                A simple website i built to practice HTML structure,
+                semantic elements, and connecting pages using links.</p>
+                <a
+                href="https://github.com/emaan-codes/little-pizza-shop-website"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View on GitHub
+              </a>
+              <br>
+              <a
+                href="https://emaan-codes.github.io/little-pizza-shop-website/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Live
+              </a>
+            </article>
+          </div>
+          <!-- Project Image 
+          <div class="project-card">
+      <h3>Coding Journal Website</h3>
+      <img
+        src="coding-journal-preview.jpg"
+        alt="Emaan's Coding Journal Preview"
+        width="200"
+      >
+      <p>
+        The website you're viewing now, my personal coding journal.
+        It documents my progress, projects, and growth as I learn web development.
+      </p>
+      <a
+        href="https://github.com/emaan-codes/coding-journal"
+        target="_blank"
+        rel="noopener noreferrer"
+        >View on GitHub</a
+      >
+    </div>
+  </div>
+    End Project Image -->
+        </div>
+      </section>
+      <section id="contact" class="section" aria-label="Contact">
+        <h2>Get in touch</h2>
+        <p>Have an idea for a collab, project, or just want to say hi? Fill out the form below and I'll get back to you!</p>
+        <div class="container">
+          <form action="https://api.web3forms.com/submit"class="contact-form" method="POST">
+             <input type="hidden" name="access_key" value="121d221e-10eb-4de7-bfb9-3688d14bcd1f">
+
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required>
+                <br>
+
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required>
+               <br>
+              <label for="message">Message</label>
+              <br>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write Your Message..."
+                required>
+              </textarea>
+              <br>
+              <button type="submit" class="btn">Submit</button>
+          </form>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <a href="mailto:emaancodes@gmail.com">Email</a>
+          <a href="https://github.com/emaan-codes"
+            target="_blank"
+            rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/emaan-codes"
+            target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>
+        </p>
+        <hr>
+         <p>© 2025 Emaan — Designed & Built by Me</p>
+      </div>
+    </footer>
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Modal Title</h2>
+      <p>This is a popup modal connected to the navbar link.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
