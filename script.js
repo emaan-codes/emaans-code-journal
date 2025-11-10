@@ -8,6 +8,13 @@ function togglesecret() {
 
 // Safe DOM-ready wrapper + null-guards to avoid runtime errors when elements are missing
 document.addEventListener('DOMContentLoaded', () => {
+  // Update footer "last update" date automatically
+  const lastEl = document.getElementById('last-update');
+  if (lastEl) {
+    const now = new Date();
+    const formatted = now.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+    lastEl.textContent = `Last update: ${formatted}`;
+  }
   // Get modal elements
   const modal = document.getElementById('myModal');
   const openModal = document.getElementById('openModal');

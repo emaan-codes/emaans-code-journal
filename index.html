@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Emaan's Coding Journal. documenting my journey in web development, experiments, and creative projects."
-    >
-    <link rel="stylesheet" href="style.css" >
-    <title>Emaan's Coding Journal</title>
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Emaan's Code Journal</title>
   </head>
   <body>
     <div id="preloader" aria-label="Loading" role="status">
@@ -16,12 +16,14 @@
     </div>
     <header>
       <div class="container">
-        <h1>Emaan's Coding Journal</h1>
+        <h1>Hey there!<br> Welcome to Emaan's Code Journal</h1>
+        <p>I am learning, experimenting, and building cool stuff with code.</p>
         <nav id="nav-links" aria-label="Main Navigation">
           <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#hero">About</a></li>
+            <li><a href="#journey">Journey</a></li>
             <li><a href="#projects">Projects</a></li>
+             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#" id="openModal">Blog</a></li>
           </ul>
@@ -31,38 +33,50 @@
     <main>
       <section id="hero" class="section" aria-label="Introduction">
         <div class="container">
-          <h2>Hello, I'm Emaan 👋</h2>
-          <p>A self-taught web developer in progress.</p>
-          <p>
-            Documenting my coding journey, experiments, and projects along the
-            way.
-          </p>
-           <p>Want to know me better? <a href="#" id="secretLink">Click here</a></p>
+          <h2>About Me</h2>
+          <p>Hi! I'm Emaan. I experiment with code and document everything i learn.</p>
+          <p>This website is my journal, my projects, experiments, and lessons in one place.</p>
         </div>
       </section>
-      <section id="about" class="section" aria-label="About Me">
-        <div class="container">
-          <h3>Skills:</h3>
-          <ul class="tools-list">
-            <li>HTML / CSS</li>
-            <li>JavaScript</li>
-            <li>Git & GitHub</li>
-            <li>VS Code</li>
-            <li>Figma</li>
-            <li>UI/UX</li>
+      <section id="secrets">
+        <button onclick="togglesecret()">Wanna know more about me?</button>
+        <div id="secretcontent" style="display:none">
+          <h3>A Little More About Me</h3>
+          <p><strong>Where I'm From:</strong>
+          I'm from Pakistan.</p>
+          <p><strong>Languages I Speak:</strong>
+          <ul>
+            <li>English</li>
+            <li>Urdu</li>
+            <li>Punjabi</li>
+            <li>Turkish (a little)</li>
           </ul>
-          <p>
-           Currently focusing on front-end best practices and
-            preparing to explore frameworks soon.
-          </p>
+        </p>
+        <p><strong>Other Hobbies:</strong>
+        Outside of coding I like painting, crochet, knitting, baking, reading & learning new Languages.</p>
+        <p>Now you know all my secrets! &#128517;</p>
+        </div>
+      </section>
+      <section id="journey">
+        <h2>My Journey</h2>
+        <div>
+          <h3>Currently</h3>
+          <p>I'm learning front-end web development, experimenting with small projects, and documenting everything here.</p>
+          <p>Right now, I'm focusing on building projects I can actually use.</p>
+        </div>
+        <div>
+          <h3>Next Steps</h3>
+          <p>I'm working toward becoming a MERN stack developer.</p>
+          <p>I plan to learn backend development, master MERN stack and build useful projects that I can showcase here.</p>
+          <p>Also excited to explore new frameworks, improve my skills, and work on fun projects in the coming months.</p>
         </div>
       </section>
       <section id="projects" class="section" aria-label="Projects">
         <div class="container">
           <h2>My Projects</h2>
           <p>
-             Here you'll find things I've built, experimented with, or learned from., I'm actively working on more
-            projects, and this section will grow as I continue my coding journey.
+            Here you'll find things I've built so far, I'm actively working on more projects, and this section will
+            grow as I continue my coding journey.
           </p>
           <div class="projects-container">
             <article class="project-card">
@@ -71,17 +85,18 @@
                 src="pizzaplacemockup-removebg-preview.png"
                 alt="Screenshot of Little Pizza Shop website"
                 width="200"
-              >
+              />
               <p>
-                A simple website i built to practice HTML structure,
-                semantic elements, and connecting pages using links.</p>
-                <a
+                A simple website i built to practice HTML structure, semantic
+                elements, and connecting pages using links.
+              </p>
+              <a
                 href="https://github.com/emaan-codes/little-pizza-shop-website"
                 target="_blank"
                 rel="noopener noreferrer"
                 >View on GitHub
               </a>
-              <br>
+              <br />
               <a
                 href="https://emaan-codes.github.io/little-pizza-shop-website/"
                 target="_blank"
@@ -110,46 +125,74 @@
       >
     </div>
   </div>
-    End Project Image -->
+   -->
+        </div>
+      </section>
+      <section id="skills" class="section" aria-label="My skills">
+        <div class="container">
+          <h2>What I Play With</h2>
+          <p>Tools, Languages and frameworks i'm experimenting with right now:</p>
+          <ul class="tools-list">
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
+            <li>VS Code</li>
+            <li>Figma</li>
+            <li>UI/UX</li>
+          </ul>
         </div>
       </section>
       <section id="contact" class="section" aria-label="Contact">
         <h2>Get in touch</h2>
-        <p>Have an idea for a collab, project, or just want to say hi? Fill out the form below and I'll get back to you!</p>
+        <p>
+          Have an idea for a collab, feedback, or just want to say hi? Fill out
+          the form below and I'd love to hear from you!
+        </p>
+        </div>
+    </section>
         <div class="container">
-          <form action="https://api.web3forms.com/submit"class="contact-form" method="POST">
-             <input type="hidden" name="access_key" value="121d221e-10eb-4de7-bfb9-3688d14bcd1f">
+          <form
+            action="https://api.web3forms.com/submit"
+            class="contact-form"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="121d221e-10eb-4de7-bfb9-3688d14bcd1f"
+            />
 
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-                required>
-                <br>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+            <br />
 
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your Email"
-                required>
-               <br>
-              <label for="message">Message</label>
-              <br>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Write Your Message..."
-                required>
-              </textarea>
-              <br>
-              <button type="submit" class="btn">Submit</button>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <br />
+            <label for="message">Message</label>
+            <br />
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write Your Message..."
+              required
+            ></textarea>
+            <br />
+            <button type="submit" class="btn">Submit</button>
           </form>
-          </div>
         </div>
       </section>
     </main>
@@ -157,25 +200,36 @@
       <div class="container">
         <p>
           <a href="mailto:emaancodes@gmail.com">Email</a>
-          <a href="https://github.com/emaan-codes"
+          <a
+            href="https://github.com/emaan-codes"
             target="_blank"
-            rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/emaan-codes"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/emaan-codes"
             target="_blank"
-            rel="noopener noreferrer">LinkedIn</a>
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
         </p>
-        <hr>
-         <p>© 2025 Emaan — Designed & Built by Me</p>
+        <hr />
+        <p>© 2025 Emaan — Designed & Built by Me</p>
       </div>
+      <p id="last-update">Last update: </p>
+      <p> Come back soon, there's always something new to explore!</p>
     </footer>
+     <p><a href="#top">back to top</a></p>
     <div id="myModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Modal Title</h2>
-      <p>This is a popup modal connected to the navbar link.</p>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>💻 My Coding Journey</h2>
+        <p>
+          Hey! You clicked on my blog, but it's still a work in progress.😄
+        </p>
+        <button onclick="alert('Thanks for your curiosity!')">Got it!</button>
+      </div>
     </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
