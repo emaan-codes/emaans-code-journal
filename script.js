@@ -56,3 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.classList.toggle('active');
   });
 });
+document.querySelector(".dropdown-btn").onclick = function () {
+  const dropdown = document.querySelector(".dropdown-content");
+  dropdown.style.display =
+    dropdown.style.display === "block" ? "none" : "block";
+};
