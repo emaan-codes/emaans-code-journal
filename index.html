@@ -20,28 +20,28 @@
 
   </head>
   <body>
-    <header>
-      <div class="navbar">
-        <h1>Emaan's Code Journal</h1>
-        <p>Learning, Experimenting, and building cool stuff</p>
-        </div>
-        <nav class="nav-links" aria-label="Main Navigation">
-          <ul>
-            <li><a href="#hero">About</a></li>
-            <li><a href="#journey">Journey</a></li>
-            <li><a href="#projects">Projects</a></li>
-             <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#" id="openModal">Blog</a></li>
-          </ul>
-        </nav>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </header>
+    <header class="header">
+  <div class="header-top">
+    <h1 class="site-title">Emaan's Code Journal</h1>
+    <p class="site-tagline">Learning, Experimenting, and building cool stuff</p>
+  </div>
+
+  <nav class="navbar">
+    <button class="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="#hero">About</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#" id="openModal">Blog</a></li>
+    </ul>
+  </nav>
+</header>
+
     <main>
       <section class="hero-card">
   <h2>Hey there!</h2>
@@ -67,6 +67,7 @@
   </div>
  </section>
 </div>
+<!--
 <section id="journey" class="journey-section">
   <h2>My Journey</h2>
   <p>Everyone's coding journey looks different. Here's where I've started, and where I hope to go next.</p>
@@ -107,44 +108,90 @@
 
   </div>
 </section>
-      <section class="projects-section">
-    <section id="projects" class="projects-section">
-  <h2>Stuff I Built so far</h2>
-  <p class="projects-subtext">
-    This is my sandbox, a place for small experiments and practice projects.
-    It might look simple now, but I'll keep adding as I learn more.
+-->
+<section id="journey" class="journey-section">
+  <h2>My Journey</h2>
+  <p class="journey-intro">
+    Everyone's coding journey looks different. Here's where I've started, and where I'm heading next.
   </p>
 
-  <div class="projects-grid">
+  <div class="scrapbook-container">
 
-    <!-- Card 1 -->
-    <div class="project-card">
-      <img src="meg-jenson-d0SJnuNNeIM-unsplash.jpg">
-      <h3>Little Pizza Shop</h3>
-      <p>A simple website I built to practice HTML structure, semantic elements, and linking pages.</p>
-
-      <div class="card-btns">
-        <a href="#" class="btn">View on GitHub</a>
-        <a href="https://emaan-codes.github.io/little-pizza-shop-website/" class="btn secondary">View Live</a>
-      </div>
+    <div class="scrap-note">
+      <div class="tape"></div>
+      <h3>When Did I Start?</h3>
+      <p>Wrote my first code in September 2025.</p>
     </div>
 
-    <!-- Card 2 -->
-    <div class="project-card coming-soon">
-      <h3>Coming Soon...</h3>
-      <p>Something new is cooking 👀 Stay tuned!</p>
+    <div class="scrap-note">
+      <div class="tape"></div>
+      <h3>Currently</h3>
+      <p>I'm learning front-end development and building small projects.</p>
     </div>
 
-    <!-- Card 3 -->
-    <div class="project-card idea">
-      <h3>Your Idea Could Be Here!</h3>
+    <div class="scrap-note">
+      <div class="tape"></div>
+      <h3>Next Steps</h3>
+      <p>Learning the MERN stack and diving deeper into React.</p>
+    </div>
+
+    <div class="scrap-note">
+      <div class="tape"></div>
+      <h3>Where I'd Love to Go</h3>
+      <p>Contribute to open-source projects and build meaningful websites.</p>
     </div>
 
   </div>
 </section>
+
+
+  <section class="projects-section">
+    <h2>Stuff I've Built So Far</h2>
+    <p class="projects-subtext">
+      This is my sandbox, a place for small experiments and practice projects.
+      It might look simple now, but I'll keep adding as I learn more.
+    </p>
+
+    <div class="projects-grid">
+
+      <!-- Card 1 -->
+      <article class="project-card">
+        <img src="meg-jenson-d0SJnuNNeIM-unsplash.jpg" alt="">
+        <h3>Little Pizza Shop</h3>
+        <p>A simple website I built to practice HTML structure, semantic elements, and linking pages.</p>
+        <div class="card-btns">
+          <a href="#" class="primery-project-btn" target="_blank">View on GitHub</a>
+          <a href="#" class="secondary-project-btn" target="_blank">View Live</a>
+        </div>
+      </article>
+
+      <!-- Empty gradient card -->
+      <article class="project-card empty-card">
+        <div class="empty-inner">Working on something...</div>
+      </article>
+
+      <!-- Empty gradient card -->
+      <article class="project-card empty-card">
+        <div class="empty-inner">Coming Soon</div>
+      </article>
+
+      <!-- Extra card -->
+      <article class="project-card">
+        <img src="placeholder.jpg" alt="">
+        <h3>Mini Weather App</h3>
+        <p>Small widget to practice fetching APIs, UI basics and responsiveness.</p>
+        <div class="card-btns">
+          <a href="#" class="primery-project-btn">Repo</a>
+          <a href="#" class="secondary-project-btn">Live</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
    
         <section id="skills" class="skills-section">
-  <h2>Stuff I Build With</h2>
+  <h2>Tools & Languages</h2>
   <p class="skills-subtext">
     Tools & languages I'm experimenting with right now:
   </p>
@@ -236,20 +283,19 @@
   </div>
 </section>
 <br>
-        <hr>
-        <br>
+<hr>
+     <footer>
         <p>© 2025 Emaan — Designed & Built by Me</p>
-      </div>
       <p id="last-update">Last update: </p>
       <p> Thanks for stopping by &lt;3 , I'll keep updating this journal as I learn, so swing by again!</p>
-    </footer>
      <p><a href="#top">back to top</a></p>
+     </footer>
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <h2>Still Baking…<h2>
+        <h2>Oops! Not Ready Yet..<h2>
         <p>
-         This space is still cooking in the oven, Check back later!
+         I swear there will be something here. Just not today. Maybe tomorrow. Or the day after.
         </p>
         <button onclick="alert('Thanks for your curiosity!')">Got it!</button>
       </div>

@@ -61,3 +61,13 @@ document.querySelector(".dropdown-btn").onclick = function () {
   dropdown.style.display =
     dropdown.style.display === "block" ? "none" : "block";
 };
+
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
+
+
